@@ -1,0 +1,19 @@
+# Agent Manifest - AgentRegistry static entry point.
+# Root-level keys only; `class` is a single dotted import path.
+# Runtime-tunable parameters live in config/config.yaml, not here.
+
+id: CMN-C2-710
+name: Enterprise High-Performance Vector Search & Knowledge Retrieval Q&A
+namespace: cmn
+version: 0.1.0
+enabled: true
+description: Enterprise High-Performance Vector Search & Knowledge Retrieval Q&A
+class: src.graph.graph.VectorSearchAdvisoryGraph
+category: Cat 2
+industry: CMN
+base_type: VectorRAGAgent
+generation_mode: deterministic
+required_trust_level: VERIFIED_EXTERNAL
+requires:
+  secrets: []
+  extras: []
